@@ -1,0 +1,93 @@
+
+  /*.background {
+    width: auto;
+    height: 800px;
+    background-image: url(../Sia.jpg);
+    background-repeat: no-repeat;
+  };
+  */
+
+  /* All stuff from TODO to submit buttons */
+  .page {
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    display: grid;
+    align-items:center;
+    grid-template-columns: 
+        [col-left] 
+        20% [margin-left] 60% [margin-right] 20% 
+        [col-right];
+       
+    grid-template-rows: 
+        [row-up]
+        10px [margin-up] auto [margin-down] 10px
+        [row-down];
+        word-wrap: break-word;
+        white-space: normal !important;
+        overflow: hidden;
+    /*border: 5px solid blue;*/
+  }
+  .page h1{
+    margin-top: 30px;
+    margin-bottom: 20px;;
+  }
+  .page p{
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  /* All buttons on this site */
+  .page button {
+    background-color: #000000; /* Green #005e03*/
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 5px;
+    margin-top:10px;
+  }
+/* On mouse-over set buttons to orange */
+.page button:hover {
+    background-color: rgb(218, 141, 0);    /* Light green #c3f1bb*/ 
+  }
+
+/* Modify input */
+  .page input {
+    background-color: white; /* white */
+    border: none;
+    width: 390px;
+    color: black;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 5px;
+  }
+
+  .pageitems {
+    grid-column-start: margin-left;
+    grid-column-end: margin-right;
+    grid-row-start: margin-up;
+    grid-row-end: margin-down;
+    /*border: 2px solid greenyellow;*/
+    
+  }
+/*
+  .pagestuff {
+    display: grid;
+    grid-template-columns: 5fr 1fr
+    minmax(10px, 1fr) 3fr
+    repeat(5, 1fr)
+    50px auto 50px 1fr;
+    grid-template-rows: min-content 1fr 
+    min-content 100px 1fr 
+    max-content;
+
+  }*/
